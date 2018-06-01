@@ -1,0 +1,54 @@
+@import "~bootstrap/scss/bootstrap";
+$classname: 'cy_rnmb';
+$theme_color_red: #e10500;
+$theme_color_pink: #ffe2e1;
+$theme_color_gray: #ddd;
+$theme_color_darken_gray: #aaa;
+$theme_color_green: #69c1a8;
+$theme_color_blue: #2e8fc0;
+
+body{
+	font-family: '微軟正黑體';
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+.#{$classname} {
+}
+// h3 {
+// 	display: inline-block;
+// 	width: 200px;
+// 	height: 200px;
+// 	background-image: url('~/img/123.jpg');
+// }
+
+.switch{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	border-radius: 5%;
+	background-color: $theme_color_darken_gray;
+	cursor: pointer;
+	transition: .3s;
+	.swith-btn{
+		width: 50%;
+		height: 100%;
+		border-radius: 100%;
+		background-color: #fff;
+		box-shadow: 0px 0px 10px  rgba(#000, .5);
+		transition: .3s;
+	}
+
+	&.active {
+		background-color: $theme_color_green;
+		.swith-btn{
+			transform: translateX(100%);
+		}
+	}
+}
+
+
+.btn {
+	&.disabled {
+		cursor: no-drop;
+	}
+}
